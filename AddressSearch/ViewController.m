@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "AddressBookViewController.h"
 @interface ViewController ()
 
 @end
@@ -16,9 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(70, 150, 200, 70)];
+    [btn setTitle:@"获取通讯录" forState:UIControlStateNormal];
+    [btn setBackgroundColor:[UIColor orangeColor]];
+    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
 }
+-(void)btnClick{
 
+    AddressBookViewController *vc = [[AddressBookViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

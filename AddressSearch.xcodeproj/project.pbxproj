@@ -15,6 +15,12 @@
 		A60795AB1EC1BBD600D07A6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60795A91EC1BBD600D07A6C /* LaunchScreen.storyboard */; };
 		A60795B61EC1BBD600D07A6C /* AddressSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A60795B51EC1BBD600D07A6C /* AddressSearchTests.m */; };
 		A60795C11EC1BBD600D07A6C /* AddressSearchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A60795C01EC1BBD600D07A6C /* AddressSearchUITests.m */; };
+		A60795D61EC1BCF500D07A6C /* PPAddressBookHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = A60795D01EC1BCF500D07A6C /* PPAddressBookHandle.m */; };
+		A60795D71EC1BCF500D07A6C /* PPGetAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = A60795D21EC1BCF500D07A6C /* PPGetAddressBook.m */; };
+		A60795D81EC1BCF500D07A6C /* PPPersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A60795D41EC1BCF500D07A6C /* PPPersonModel.m */; };
+		A60795DE1EC1BD1700D07A6C /* AddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A60795DA1EC1BD1700D07A6C /* AddressBookViewController.m */; };
+		A60795DF1EC1BD1700D07A6C /* ChineseToPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = A60795DC1EC1BD1700D07A6C /* ChineseToPinyin.m */; };
+		A60795E01EC1BD1700D07A6C /* defult.png in Resources */ = {isa = PBXBuildFile; fileRef = A60795DD1EC1BD1700D07A6C /* defult.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,18 @@
 		A60795BC1EC1BBD600D07A6C /* AddressSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddressSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60795C01EC1BBD600D07A6C /* AddressSearchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressSearchUITests.m; sourceTree = "<group>"; };
 		A60795C21EC1BBD600D07A6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A60795CF1EC1BCF500D07A6C /* PPAddressBookHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAddressBookHandle.h; sourceTree = "<group>"; };
+		A60795D01EC1BCF500D07A6C /* PPAddressBookHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPAddressBookHandle.m; sourceTree = "<group>"; };
+		A60795D11EC1BCF500D07A6C /* PPGetAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPGetAddressBook.h; sourceTree = "<group>"; };
+		A60795D21EC1BCF500D07A6C /* PPGetAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPGetAddressBook.m; sourceTree = "<group>"; };
+		A60795D31EC1BCF500D07A6C /* PPPersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPersonModel.h; sourceTree = "<group>"; };
+		A60795D41EC1BCF500D07A6C /* PPPersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPersonModel.m; sourceTree = "<group>"; };
+		A60795D51EC1BCF500D07A6C /* PPSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSingleton.h; sourceTree = "<group>"; };
+		A60795D91EC1BD1700D07A6C /* AddressBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookViewController.h; sourceTree = "<group>"; };
+		A60795DA1EC1BD1700D07A6C /* AddressBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookViewController.m; sourceTree = "<group>"; };
+		A60795DB1EC1BD1700D07A6C /* ChineseToPinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyin.h; sourceTree = "<group>"; };
+		A60795DC1EC1BD1700D07A6C /* ChineseToPinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinyin.m; sourceTree = "<group>"; };
+		A60795DD1EC1BD1700D07A6C /* defult.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defult.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +119,16 @@
 		A607959A1EC1BBD600D07A6C /* AddressSearch */ = {
 			isa = PBXGroup;
 			children = (
+				A60795CE1EC1BCF500D07A6C /* PPGetAddressBook */,
 				A607959E1EC1BBD600D07A6C /* AppDelegate.h */,
 				A607959F1EC1BBD600D07A6C /* AppDelegate.m */,
 				A60795A11EC1BBD600D07A6C /* ViewController.h */,
 				A60795A21EC1BBD600D07A6C /* ViewController.m */,
+				A60795D91EC1BD1700D07A6C /* AddressBookViewController.h */,
+				A60795DA1EC1BD1700D07A6C /* AddressBookViewController.m */,
+				A60795DB1EC1BD1700D07A6C /* ChineseToPinyin.h */,
+				A60795DC1EC1BD1700D07A6C /* ChineseToPinyin.m */,
+				A60795DD1EC1BD1700D07A6C /* defult.png */,
 				A60795A41EC1BBD600D07A6C /* Main.storyboard */,
 				A60795A71EC1BBD600D07A6C /* Assets.xcassets */,
 				A60795A91EC1BBD600D07A6C /* LaunchScreen.storyboard */,
@@ -138,6 +162,20 @@
 				A60795C21EC1BBD600D07A6C /* Info.plist */,
 			);
 			path = AddressSearchUITests;
+			sourceTree = "<group>";
+		};
+		A60795CE1EC1BCF500D07A6C /* PPGetAddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				A60795CF1EC1BCF500D07A6C /* PPAddressBookHandle.h */,
+				A60795D01EC1BCF500D07A6C /* PPAddressBookHandle.m */,
+				A60795D11EC1BCF500D07A6C /* PPGetAddressBook.h */,
+				A60795D21EC1BCF500D07A6C /* PPGetAddressBook.m */,
+				A60795D31EC1BCF500D07A6C /* PPPersonModel.h */,
+				A60795D41EC1BCF500D07A6C /* PPPersonModel.m */,
+				A60795D51EC1BCF500D07A6C /* PPSingleton.h */,
+			);
+			path = PPGetAddressBook;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A60795AB1EC1BBD600D07A6C /* LaunchScreen.storyboard in Resources */,
+				A60795E01EC1BD1700D07A6C /* defult.png in Resources */,
 				A60795A81EC1BBD600D07A6C /* Assets.xcassets in Resources */,
 				A60795A61EC1BBD600D07A6C /* Main.storyboard in Resources */,
 			);
@@ -276,9 +315,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A60795D81EC1BCF500D07A6C /* PPPersonModel.m in Sources */,
 				A60795A31EC1BBD600D07A6C /* ViewController.m in Sources */,
+				A60795D61EC1BCF500D07A6C /* PPAddressBookHandle.m in Sources */,
 				A60795A01EC1BBD600D07A6C /* AppDelegate.m in Sources */,
 				A607959D1EC1BBD600D07A6C /* main.m in Sources */,
+				A60795DF1EC1BD1700D07A6C /* ChineseToPinyin.m in Sources */,
+				A60795D71EC1BCF500D07A6C /* PPGetAddressBook.m in Sources */,
+				A60795DE1EC1BD1700D07A6C /* AddressBookViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
